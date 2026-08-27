@@ -1,0 +1,13 @@
+{
+  "projects": [
+    {
+      "slug": "welcome",
+      "title": "Welcome to JSI",
+      "description": "The first project on the shelf: how an idea becomes a live web page under S&C Holdings.",
+      "tags": ["welcome", "how-it-works"],
+      "date": "2026-08-27",
+      "path": "projects/welcome/",
+      "pages": []
+    }
+  ]
+}
