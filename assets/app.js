@@ -2,6 +2,7 @@ const grid = document.querySelector("#project-grid");
 const input = document.querySelector("#search-input");
 const count = document.querySelector("#project-count");
 const emptyState = document.querySelector("#empty-state");
+const emptyMessage = document.querySelector("#empty-message");
 const clearButton = document.querySelector("#clear-search");
 
 let projects = [];
@@ -34,6 +35,10 @@ const render = () => {
 
   count.textContent = `${visible.length} of ${projects.length} project${projects.length === 1 ? "" : "s"}`;
   emptyState.hidden = visible.length !== 0;
+  emptyMessage.textContent = projects.length === 0
+    ? "The shelf is ready for its first project."
+    : "Nothing on the shelf matches that yet.";
+  clearButton.hidden = projects.length === 0;
 
   grid.innerHTML = visible.map((project, index) => {
     const pages = project.pages || [];
@@ -44,7 +49,7 @@ const render = () => {
       : "";
 
     return `
-      <article class="project-card">
+      <article class="project-card book-shape-${(index % 6) + 1}">
         <div class="card-top">
           <span class="card-index">${String(index + 1).padStart(2, "0")}${pages.length ? ` · ${pages.length} pages` : ""}</span>
           <a class="card-arrow" href="${escapeHtml(project.path)}" aria-label="Open ${escapeHtml(project.title)}">↗</a>
@@ -85,7 +90,9 @@ fetch("projects.json", { cache: "no-store" })
     return response.json();
   })
   .then((data) => {
-    projects = (data.projects || []).sort((a, b) => b.date.localeCompare(a.date));
+    projects = (data.projects || [])
+      .filter((project) => !project.hidden)
+      .sort((a, b) => b.date.localeCompare(a.date));
     render();
   })
   .catch(() => {
