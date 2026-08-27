@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="[PROJECT DESCRIPTION]" />
+    <title>[PROJECT TITLE] · JSI · S&amp;C Holdings</title>
+    <style>
+      :root { --paper:#f1eadc; --ink:#18211d; --acid:#ddff63; --blue:#294bff; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font-family:Arial,sans-serif; }
+      main { width:min(900px,calc(100% - 32px)); margin:0 auto; padding:130px 0 90px; }
+      .kicker { font:700 12px/1.2 ui-monospace,Consolas,monospace; letter-spacing:.12em; text-transform:uppercase; }
+      h1 { margin:28px 0; font:900 clamp(56px,11vw,120px)/.82 Georgia,serif; letter-spacing:-.065em; }
+      .intro { max-width:700px; font:23px/1.45 Georgia,serif; }
+      .pages { display:grid; gap:14px; margin:64px 0; padding:0; list-style:none; counter-reset:page; }
+      .pages li { counter-increment:page; }
+      .pages a { display:grid; grid-template-columns:54px 1fr auto; gap:18px; align-items:center; padding:22px; border:2px solid var(--ink); background:#f8f3e9; box-shadow:5px 5px 0 var(--ink); color:inherit; text-decoration:none; }
+      .pages a::before { content:counter(page,decimal-leading-zero); font:700 12px ui-monospace,Consolas,monospace; }
+      .pages strong { font:800 25px Georgia,serif; }
+      .pages span { color:var(--blue); font-size:22px; }
+      .back { color:var(--blue); font-weight:800; text-underline-offset:4px; }
+    </style>
+  </head>
+  <body>
+    <!-- Insert the fixed JSI navigation here. -->
+    <main>
+      <p class="kicker">Project · [PAGE COUNT] pages</p>
+      <h1>[PROJECT TITLE]</h1>
+      <p class="intro">[PROJECT DESCRIPTION]</p>
+      <ol class="pages">
+        <!-- Repeat: <li><a href="page.html"><strong>Page title</strong><span>↗</span></a></li> -->
+      </ol>
+      <a class="back" href="../../">← Back to all projects</a>
+    </main>
+  </body>
+</html>
