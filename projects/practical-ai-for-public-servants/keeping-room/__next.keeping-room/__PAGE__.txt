@@ -1,0 +1,7 @@
+1:"$Sreact.fragment"
+2:I[9336,["894","static/chunks/app/keeping-room/page-2c5fd314431f3574.js"],"default"]
+3:I[6368,[],"OutletBoundary"]
+4:"$Sreact.suspense"
+:HL["/jsi/projects/practical-ai-for-public-servants/_next/static/css/80849c597ee33d16.css","style"]
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{}],[["$","link","0",{"rel":"stylesheet","href":"/jsi/projects/practical-ai-for-public-servants/_next/static/css/80849c597ee33d16.css","precedence":"next"}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ExJbWvJhDtSFLUV_M3zMJ"}
+5:null
