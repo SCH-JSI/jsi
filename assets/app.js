@@ -3,6 +3,7 @@ const grid = document.querySelector("#project-grid");
 const createProjectBook = (project, index) => {
   const link = document.createElement("a");
   link.className = "project-book project-shape-" + ((index % 6) + 1);
+  if (project.title.length > 24) link.classList.add("project-book-long-title");
   link.href = project.path;
   link.setAttribute("aria-label", "Open " + project.title);
 
