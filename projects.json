@@ -23,6 +23,15 @@
         { "title": "Explore resources", "file": "explore/", "description": "Open texts, videos, podcasts and interactive tools." },
         { "title": "Policy and guidance", "file": "policy/", "description": "Current official Australian Government AI resources." }
       ]
+    },
+    {
+      "slug": "the-clearance",
+      "title": "The Clearance",
+      "description": "A short organisational field game about attention, restraint and change under partial knowledge.",
+      "tags": ["game", "public-service", "organisational-change", "systems-thinking"],
+      "date": "2026-08-29",
+      "path": "projects/the-clearance/",
+      "pages": []
     }
   ]
 }
