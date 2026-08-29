@@ -32,6 +32,15 @@
       "date": "2026-08-29",
       "path": "projects/adopt-this/",
       "pages": []
+    },
+    {
+      "slug": "madmin",
+      "title": "MADMIN",
+      "description": "An absurdist surgery game about attention, administrative entropy and the consequences of choosing what to ignore.",
+      "tags": ["game", "workplace", "bureaucracy", "attention", "simulation"],
+      "date": "2026-08-29",
+      "path": "projects/madmin/",
+      "pages": []
     }
   ]
 }
