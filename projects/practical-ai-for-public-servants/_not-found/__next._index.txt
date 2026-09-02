@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[557,[],""]
-3:I[6313,[],""]
-:HL["/jsi/projects/practical-ai-for-public-servants/_next/static/css/b86b764b626f0b8c.css","style"]
-:HL["/jsi/projects/practical-ai-for-public-servants/_next/static/css/636ed74b141588f0.css","style"]
-0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/jsi/projects/practical-ai-for-public-servants/_next/static/css/b86b764b626f0b8c.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/jsi/projects/practical-ai-for-public-servants/_next/static/css/636ed74b141588f0.css","precedence":"next"}]],["$","html",null,{"lang":"en-AU","children":["$","body",null,{"children":[["$","a",null,{"className":"jsi-return","href":"https://sch-jsi.github.io/jsi/","children":"← Back to the JSI shelf"}],["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ExJbWvJhDtSFLUV_M3zMJ"}

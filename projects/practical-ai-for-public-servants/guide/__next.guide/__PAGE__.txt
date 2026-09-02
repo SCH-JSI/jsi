@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[6356,["585","static/chunks/app/guide/page-40ef02d21472bce1.js"],"GuideExplorer"]
-3:I[6368,[],"OutletBoundary"]
-4:"$Sreact.suspense"
-:HL["/jsi/projects/practical-ai-for-public-servants/ai-colab-logo.png","image"]
-0:{"rsc":["$","$1","c",{"children":[[["$","header",null,{"className":"site-header ","children":[["$","a",null,{"className":"brand","href":"/jsi/projects/practical-ai-for-public-servants/","aria-label":"Practical AI for Public Servants home","children":[["$","img",null,{"className":"brand-logo","src":"/jsi/projects/practical-ai-for-public-servants/ai-colab-logo.png","alt":"","aria-hidden":"true"}],["$","span",null,{"className":"brand-title","children":"Practical AI for Public Servants"}]]}],["$","nav",null,{"aria-label":"Primary navigation","children":[["$","a",null,{"href":"/jsi/projects/practical-ai-for-public-servants/guide","children":"Field guide"}],["$","a",null,{"href":"/jsi/projects/practical-ai-for-public-servants/resource","children":"Slides"}],["$","a",null,{"href":"/jsi/projects/practical-ai-for-public-servants/explore","children":"Explore"}],["$","a",null,{"href":"/jsi/projects/practical-ai-for-public-servants/policy","children":"Policy"}]]}]]}],["$","main",null,{"children":["$","$L2",null,{}]}]],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"ExJbWvJhDtSFLUV_M3zMJ"}
-5:null
