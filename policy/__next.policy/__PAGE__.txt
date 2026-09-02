@@ -1,7 +1,0 @@
-1:"$Sreact.fragment"
-2:I[36873,["/jsi/_next/static/chunks/0f28qyfw2z9cw.js","/jsi/_next/static/chunks/17f2ht9wo-phb.js","/jsi/_next/static/chunks/0z1hnxmn6gkrc.js","/jsi/_next/static/chunks/076v.zsmvcla8.js"],"PolicyLibrary"]
-3:I[6391,["/jsi/_next/static/chunks/0f28qyfw2z9cw.js","/jsi/_next/static/chunks/17f2ht9wo-phb.js","/jsi/_next/static/chunks/0z1hnxmn6gkrc.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-:HL["/jsi/ai-colab-logo.png","image"]
-0:{"rsc":["$","$1","c",{"children":[["$","div",null,{"className":"policy-page","children":[["$","header",null,{"className":"site-header site-header-light","children":[["$","a",null,{"className":"brand","href":"/jsi/","aria-label":"Practical AI for Public Servants home","children":[["$","img",null,{"className":"brand-logo","src":"/jsi/ai-colab-logo.png","alt":"","aria-hidden":"true"}],["$","span",null,{"className":"brand-title","children":"Practical AI for Public Servants"}]]}],["$","nav",null,{"aria-label":"Primary navigation","children":[["$","a",null,{"href":"/jsi/guide","children":"Field guide"}],["$","a",null,{"href":"/jsi/resource","children":"Slides"}],["$","a",null,{"href":"/jsi/explore","children":"Explore"}],["$","a",null,{"href":"/jsi/policy","children":"Policy"}]]}]]}],["$","$L2",null,{}]]}],[["$","script","script-0",{"src":"/jsi/_next/static/chunks/076v.zsmvcla8.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"8yrlY_BqPRtVL29IlfakQ"}
-5:null

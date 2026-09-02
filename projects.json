@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "slug": "welcome",
+      "title": "Welcome to JSI",
+      "description": "The first project on the shelf: how an idea becomes a live web page under S&C Holdings.",
+      "tags": ["welcome", "how-it-works"],
+      "date": "2026-08-27",
+      "path": "projects/welcome/",
+      "hidden": true,
+      "pages": []
+    },
+    {
+      "slug": "adopt-this",
+      "title": "Adopt This!",
+      "description": "Ten working days inside an Australian Government department, trying to make an AI pilot decidable and defensible.",
+      "tags": ["artificial-intelligence", "government", "simulation", "institutional-coordination"],
+      "date": "2026-08-29",
+      "path": "projects/adopt-this/",
+      "pages": []
+    }
+  ]
+}
