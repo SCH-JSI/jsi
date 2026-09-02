@@ -18,6 +18,15 @@
       "date": "2026-08-29",
       "path": "projects/adopt-this/",
       "pages": []
+    },
+    {
+      "slug": "robbie-slape",
+      "title": "Robbie Slape Portfolio",
+      "description": "Policy, organisational change, emerging technology, writing and practical experiments.",
+      "tags": ["portfolio", "policy", "organisational-change", "emerging-technology"],
+      "date": "2026-09-02",
+      "path": "projects/robbie-slape/",
+      "pages": []
     }
   ]
 }
