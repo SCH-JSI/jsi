@@ -2,7 +2,7 @@ const grid = document.querySelector("#project-grid");
 
 const createProjectBook = (project, index) => {
   const link = document.createElement("a");
-  link.className = "project-book project-shape-" + ((index % 6) + 1);
+  link.className = "project-book project-shape-" + project.bookShape;
   if (project.title.length > 24) link.classList.add("project-book-long-title");
   link.href = project.path;
   link.setAttribute("aria-label", "Open " + project.title);
@@ -33,7 +33,10 @@ fetch("projects.json", { cache: "no-store" })
   .then((data) => {
     const projects = (data.projects || [])
       .filter((project) => !project.hidden)
-      .sort((a, b) => b.date.localeCompare(a.date));
+      .sort((a, b) => b.date.localeCompare(a.date))
+      // Choose covers before pinning so moving a book keeps the current shelf's appearance.
+      .map((project, index) => ({ ...project, bookShape: project.bookShape ?? ((index % 6) + 1) }))
+      .sort((a, b) => Number(b.pinned === true) - Number(a.pinned === true));
 
     grid.replaceChildren(...projects.map(createProjectBook));
     grid.setAttribute("aria-label", projects.length
