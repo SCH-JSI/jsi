@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "slug": "why-is-work-so-hard",
+      "title": "Why Is Work So Hard?",
+      "description": "A practical brief for understanding delays, chasing and duplicated effort at work.",
+      "tags": ["work", "organisational-change", "process", "bureaucracy"],
+      "date": "2026-09-26",
+      "path": "projects/why-is-work-so-hard/",
+      "pages": []
+    },
+    {
       "slug": "welcome",
       "title": "Welcome to JSI",
       "description": "The first project on the shelf: how an idea becomes a live web page under S&C Holdings.",
