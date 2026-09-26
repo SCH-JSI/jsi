@@ -34,7 +34,9 @@
       "description": "Policy, organisational change, emerging technology, writing and practical experiments.",
       "tags": ["portfolio", "policy", "organisational-change", "emerging-technology"],
       "date": "2026-09-02",
-      "path": "projects/robbie-slape/",
+      "path": "https://robbieslape.com/",
+      "pinned": true,
+      "bookShape": 2,
       "pages": []
     }
   ]
