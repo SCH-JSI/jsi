@@ -10,4 +10,3 @@
 
 /* Fictional form number: no initials or institutional branding. */
 .form-mark{display:flex;flex-direction:column;align-items:center;gap:2px;border:2px solid var(--ink);padding:5px 9px;background:var(--yellow);letter-spacing:0;line-height:1;transform:rotate(-3deg)}.form-mark span{margin:0;color:var(--ink);font:700 8px/1 'Courier New',monospace;letter-spacing:.1em}.form-mark strong{font:900 22px/1 Arial,sans-serif;letter-spacing:-.05em}.form-subtitle{font:700 12px/1.5 'Courier New',monospace;text-transform:uppercase;letter-spacing:.07em;margin:-7px 0 22px;max-width:450px}
-
