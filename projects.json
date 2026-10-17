@@ -1,6 +1,16 @@
 {
   "projects": [
     {
+      "slug": "clearance-hydra",
+      "title": "Clearance Hydra",
+      "description": "One less approval. Six colleagues. Ten minutes. Untangle hidden dependencies and make a real improvement in a colourful workplace simulation.",
+      "tags": ["game", "government", "workplace", "organisational-change", "simulation"],
+      "date": "2026-10-18",
+      "path": "projects/clearance-hydra/",
+      "bookShape": 3,
+      "pages": []
+    },
+    {
       "slug": "form-12-b",
       "title": "Form 12-B",
       "description": "Seven decisions, twelve energy units. What are you actually willing to help Creative Bureaucrats and Friends become?",
