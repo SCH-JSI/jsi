@@ -1,16 +1,15 @@
-# Clearance Hydra — draft verification
+# Clearance Hydra — revised draft verification
 
 Verified 18 October 2026 (Australia/Sydney).
 
-- **Rules:** 10 Node tests passed, including 80 seeded simulations of up to 80 valid choices each. Readiness, support, assurance and workload remain within 0–100. Unsupported delivery is rejected.
-- **Pilot browser playthrough:** manual route, temporary reporting bridge, ten-request scope, evidence, ownership, review and sponsor endorsement reached delivery at 100% readiness. Workload remained 54% to reflect the temporary coordination cost.
-- **Wider browser playthrough:** tested configuration and verified export reached delivery at 100% readiness and 10% additional workload. A premature removal reduced readiness; restoring the route recovered it before endorsement and delivery.
-- **Timer:** visible countdown, explicit pause and resume, and real ten-minute expiry checked. Expiry produced an unfinished-change debrief rather than a false successful delivery.
-- **Persistence:** reload offered resume; a completed shift offered the saved debrief.
-- **Debrief download:** browser produced `clearance-hydra-debrief.txt`.
-- **Layout:** 1366×768 target desktop and 1280×720 laptop checked; inbox, workspace, chat, timer and readiness remain in one application screen, with scrolling inside panes. 390×844 phone layout checked using inbox/workspace/chat switches and a Finance reply that updated readiness.
-- **Visuals:** six local SVG character portraits, local hydra mascot, document and spreadsheet views, and dependency map inspected. Screenshot retained as `preview.jpg`.
-- **Browser console:** no errors or warnings captured during the tested playthroughs.
-- **Source:** JavaScript syntax checks passed. No external runtime assets or API calls are used.
+- Rules: 13 Node tests passed, including 60 seeded simulations. Both case variants and the separate-enquiries evidence route can succeed. Broad support cannot issue a department-wide change. Extra undertakings, changed wording, insufficient time and a stopped queue prevent unsupported delivery.
+- Browser playthrough: joint clearance round and consolidated paper produced circular conditions. Evidence was gathered independently. A filed local instruction with an added dashboard was refused by Operations. Withdrawing that commitment and obtaining current signatures allowed the instruction to issue. The debrief recorded the loop and withdrawal.
+- Navigation: unfinished form values survived switching to routing and back. Incoming replies did not automatically navigate away from the open file. Papers and conversations scroll within fixed panes.
+- Persistence: reloading an unfinished shift offered Return to your desk and restored the file. Reloading a completed shift offered Last shift.
+- Clock: visible countdown, action costs, pause and resume checked in the browser. Rule tests cover expiry and prohibit actions from completing after time runs out; a fresh full-duration browser expiry was not repeated for this revision.
+- Download: Keep the record produced clearance-hydra-shift.txt.
+- Responsive layout: 1366×768 desktop, 1280×720 laptop and 390×844 phone inspected. No document overflow at the laptop or phone size. Phone Post, Desk and People switches exercised with new evidence enquiries and incoming mail. A notice that covered the phone panel switches was removed there; unread mail appears in the Post label.
+- Browser console: no errors or warnings captured during the tested playthrough.
+- Assets: local vector portraits and new ink-style hydra mark; current screenshot in preview.jpg. No remote runtime assets, API calls or build dependencies.
 
-Not verified across every browser or with a screen reader. Small screens deliberately switch panels rather than displaying all three at once. This draft remains deterministic; alternate outcomes arise from decisions, not random events.
+Not exhaustively tested across browsers or with a screen reader. Small screens display one working pane at a time. Scenario variation is limited to two booking records; the decision rules and timed arrivals are deterministic within a shift.

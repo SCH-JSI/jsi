@@ -1,36 +1,38 @@
 # Clearance Hydra
 
-A ten-minute, single-workspace game set in the fictional Australian Government Department of Everyday Possibilities. The player must remove a duplicate travel approval while preserving financial authority, evidence, reporting and a practical booking route.
+One approval to remove. Ten minutes until the meeting. A game set in a fictional Australian Government workplace.
 
 ## Play and share
 
-Serve this directory with a static HTTP server and open `index.html`. It is buildless HTML, CSS and JavaScript. ES modules require HTTP/HTTPS; opening the HTML directly as a file is not supported.
+Serve this directory over HTTP/HTTPS and open index.html. This is buildless HTML, CSS and JavaScript; opening the HTML directly as a file is unsupported because it uses ES modules. Keep its relative assets together.
 
-The JSI shelf entry is in the repository's `projects.json`, at `projects/clearance-hydra/`. Keep relative asset paths intact when copying the directory. No API key, AI service, account, external font or third-party runtime asset is required. No player data is sent to a server. Optional browser storage remembers a shift or the latest debrief; a text debrief can also be downloaded.
+The JSI shelf entry is in projects.json. No account, API key, external font or third-party runtime is needed. No player data is sent to a server. Browser storage remembers the current shift, unfiled wording and latest debrief. The player can download a text record.
 
-The public shelf is updated only after approval of the draft preview, following the repository's `publish-jsi` workflow. This project is prepared on `codex/clearance-hydra`; do not publish the unrelated application at the parent workspace root.
+The draft lives on codex/clearance-hydra. Publish to main only after explicit approval of its preview, following .claude/skills/publish-jsi/SKILL.md. Do not publish the unrelated application at the parent workspace root.
 
-## Simulation
+## Design and rules (contains spoilers)
 
-- Six illustrated colleagues: Alex (Director), Priya (Operations), Sam (Finance), Mei (Assurance), Luca (ICT), Jules (Reporting).
-- Three major dependencies: a shadow spreadsheet, an inherited audit workaround and a booking trigger.
-- Two viable outcomes: a ten-request manual pilot with a temporary reporting handover, or a staged wider rollout using a tested configuration and verified export.
-- Recoverable mistakes: bypassing the branch step prematurely, dropping reporting without a replacement, and adding an unnecessary working group.
-- Ten-minute real elapsed timer during play; explicit pause; expiry and voluntary early finish generate a debrief without claiming delivery.
+The six desks can be approached in any order. Clearance rounds, consolidated papers and extra commitments can produce supportive correspondence without an executable decision. There is no next-action prompt, recommended scope, or colour-coded correct answer.
 
-Readiness is computed from actual conditions, with these weights (100 total): duplication confirmed 10; financial authority 12; process ownership 12; evidence control 12; scope-appropriate reporting 14; feasibility 12; chosen scope 6; Finance/Operations/Reporting support 4 each; review and rollback 5; endorsement 5. Broken implementation invalidates affected conditions. Discovery itself does not subtract readiness. Scope changes invalidate endorsement and can invalidate feasibility/reporting. Optional exploration is not required for success.
+The player edits six parts of an instruction. A viable change fits a named team's limited travel, existing routing, retained financial authority, linked records and a review condition. Evidence can come from a completed booking matching one of two shift variants, or from separate audit, systems and reporting enquiries. Priya, Sam and Alex must sign the same version. Changes to wording or commitments invalidate earlier signatures.
 
-`engine.mjs` contains rules and scenario content. `app.js` renders the workspace, local portraits and interactions. `style.css` controls the responsive layout. `hydra.svg` is the local mascot. `preview.jpg` is a screenshot for sharing.
+Three optional undertakings expand the workload. They must be negotiated back out if accepted. A premature shortcut can stop the booking queue; restoration makes recovery possible. Broad cross-branch changes depend on owners and release decisions unavailable before the meeting.
 
-## Checks
+The ten-minute clock advances with real play time and explicit action costs. Pause is available. Incoming requests arrive at fixed points but never change scope automatically. A premature issue is returned; time expiry and voluntary departure produce an unfinished debrief. The explanation of the scope trap appears after the shift.
 
-From this project directory:
+Readiness measures the current instruction, not the number of conversations completed. It combines boundary (18), authority (12), records (12), route (14), reporting (10), owner (14), finance (10), review (6) and sponsor (4), for a maximum of 100.
 
-```sh
-node --test engine.test.mjs
-node --check app.js
-```
+## Files and checks
 
-The tests cover readiness bounds, both delivery routes, scope changes, reporting failure, shortcut recovery, optional work, unavailable/repeated decisions and ended shifts. Browser checks are recorded in `TEST-RESULTS.md`.
+- simulation.mjs: state, scenarios, choices, costs and decision rules.
+- screen.js: stable desk shell, papers, correspondence and persistence.
+- interface.css: responsive office layout, reduced-motion support.
+- portraits.js and hydra.svg: local vector artwork.
+- preview.jpg: current sharing image.
 
-This is a deterministic scenario and a first playable draft, not an open-ended AI conversation. All policies and records are fictional scenario material, not current government advice.
+Run from this directory:
+
+    node --test simulation.test.mjs
+    node --check screen.js
+
+Browser verification is recorded in TEST-RESULTS.md. Scenario policies and records are fictional.
